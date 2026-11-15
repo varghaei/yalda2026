@@ -92,6 +92,8 @@
   .pay h3 { font-family: var(--display); font-weight: 400; color: var(--maroon); font-size: 23px; line-height: 1.15; margin: 0; }
   .paybox { background: #fbefd8; border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
   .paybox p { margin: 0; font-size: 15px; }
+  .rules { margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+  .rules li::marker { color: var(--maroon); }
   .handle { font-weight: 600; color: var(--green); font-size: 18px; letter-spacing: .01em; }
   .paylink { align-self: flex-start; font: 600 15px var(--body); color: #fff6e6; background: var(--green); border-radius: 999px; padding: 9px 18px; text-decoration: none; transition: transform .15s, background .2s; }
   .paylink:hover { transform: translateY(-2px); background: #17392b; }
@@ -253,6 +255,10 @@
         <p>Send <strong id="payAmount">your total</strong> by PayPal to</p>
         <p class="handle">@MSUISA2026</p>
         <p>In PayPal the account appears under the name <strong>Fatemeh Yousefsaber</strong>.</p>
+        <ul class="rules">
+          <li>Choose <strong>Friends and Family</strong> as the payment type.</li>
+          <li>In the PayPal note, write <strong>only your name</strong> or <strong>Yalda2026</strong>. Do not use the words “Iran” or “Persia” in any form.</li>
+        </ul>
         <a class="paylink" id="payLink" href="https://paypal.me/MSUISA2026" target="_blank" rel="noopener">Open PayPal</a>
       </div>
       <label class="drop" id="drop" for="receipt">
