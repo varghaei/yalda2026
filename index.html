@@ -205,7 +205,7 @@
 
   <section class="card top info rise d3" aria-labelledby="infoTitle">
     <h2 id="infoTitle">Join us to celebrate Yalda Night!</h2>
-    <p class="lead">Registration is required for all attendees. Fill in the form below, pay by PayPal, and upload your receipt, all on this page.</p>
+    <p class="lead">Registration is required for all attendees. Fill in the form below, pay by PayPal, and upload your receipt, all on this page. Your QR ticket will arrive by email a few minutes after you register.</p>
     <ul class="prices">
       <li><span>MSU students</span><b>$15</b></li>
       <li><span>MSU students’ dependents</span><b>$20</b></li>
@@ -380,7 +380,7 @@ form.addEventListener("submit", async e => {
 });
 
 function showDone(data) {
-  $("doneSub").textContent = data.name + ", your registration and receipt for $" + data.amount + " were sent.";
+  $("doneSub").textContent = data.name + ", you're registered ($" + data.amount + "). Your QR ticket is on its way to " + data.email + " and should arrive within a few minutes. If you don't see it, check your spam or promotions folder. Show the QR code at the door.";
   const list = $("doneList"); list.textContent = "";
   for (const [id, label] of KINDS) {
     if (!data[id]) continue;
